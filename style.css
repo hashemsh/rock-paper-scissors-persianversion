@@ -81,7 +81,18 @@ header > h1 {
     margin: 30px;
 }
 
-
+.green{
+    border: 2px solid #13cc13;
+    box-shadow: 0 0 6px 3px #3333337a;
+}
+.red{
+    border: 2px solid #d50000;
+    box-shadow: 0 0 6px 3px #3333337a;
+}
+.gray{
+    border: 2px solid #263238;
+    box-shadow: 0 0 6px 3px #3333337a;
+}
 
 
 
