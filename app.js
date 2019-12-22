@@ -13,23 +13,37 @@ function getCompuetrChoice(){
     const randomNum = Math.floor(Math.random()*3);
     return choices[randomNum];
 }
+
+function win(){
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    compScore_span.innerHTML = compScore;
+}
+function lose(){
+    compScore++;
+    userScore_span.innerHTML = userScore;
+    compScore_span.innerHTML = compScore;
+}
+function draw(){
+    
+}
 function game(userChoice){
     const compChoice = getCompuetrChoice();
     switch(userChoice+compChoice){
         case "rs":
         case "pr":
         case "sp":
-            console.log("user win ");
+            win();
             break;
         case "rp":
         case "ps":
         case "sr":
-            console.log("user lose ");
+            lose();
             break;
         case "rr":
         case "pp":
         case "ss":
-            console.log("it's draw ");
+            draw();
             break;    
     }
 }
